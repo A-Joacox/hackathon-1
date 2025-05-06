@@ -5,7 +5,15 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
+    <repositories>
+        <repository>
+            <id>github-models-sdk</id>
+            <name>GitHub Models SDK Maven Repo</name>
+            <url>https://maven.pkg.github.com/github/models-sdk</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>
+    </repositories>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
